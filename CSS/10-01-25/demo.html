@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .navbar {
+            font-size: 30px;
+            background-color: aqua;
+
+        }
+
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            margin-top: 30px;
+            display: inline-block;
+            position: absolute;
+            top: 50px;
+            right: 30px;
+        }
+
+        .parent {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .child {
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            border: 1px solid red;
+            margin-top: 100px;
+            cursor: pointer;
+        }
+
+        .child:hover {
+            box-shadow: 5px 5px 5px red;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">Tasks List</div>
+    <a href="popup.html">Add new Task</a>
+
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+</body>
+
+</html>

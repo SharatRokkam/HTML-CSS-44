@@ -1,0 +1,18 @@
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  font-size: 20px;
+}
+
+.box2 {
+  /* height: 100%; */
+  /* width: 100%; */
+  background-color: yellow;
+  /* font-size: 1em; */
+  /* width: 3em; */
+  font-size: 2rem;
+
+  width: 100vw;
+  height: 50vh;
+}

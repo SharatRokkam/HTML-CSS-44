@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  /* background-color: chartreuse; */
+  border: 1px solid blue;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* transform: translateZ(100px); */
+}
+
+/* .box:hover {
+  transform: scale(1.5, 2);
+  transform: rotateZ(360deg);
+  transform: skewY(18deg);
+
+  transition: 2s;
+} */
+
+.box1 {
+  background-color: yellow;
+  transform-style: preserve-3d;
+}
+
+.box1:hover {
+  transform: perspective(5cm) rotate(-15deg, 30deg);
+  /* transition: 2s; */
+}

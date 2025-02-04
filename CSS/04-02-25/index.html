@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar container */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0033cc;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        /* Navbar left and right sections */
+        .navbar-left,
+        .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-left a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Buttons */
+        .navbar-right .button {
+            margin-left: 15px;
+            padding: 8px 15px;
+            background-color: #0099ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .navbar-right .button:hover {
+            background-color: #007acc;
+        }
+
+        /* Hamburger menu for small screens */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 3px 0;
+        }
+
+        /* Mobile dropdown menu */
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            background-color: #0033cc;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            padding: 10px 20px;
+        }
+
+        .mobile-menu a {
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Show menu when checkbox is checked */
+        #menu-toggle:checked+.mobile-menu {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-left {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .mobile-menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="#">Solutions</a>
+            <a href="#">Products</a>
+            <a href="#">Resources</a>
+            <a href="#">Plans</a>
+        </div>
+        <label class="hamburger" for="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+        <div class="navbar-right">
+            <a href="#" class="button">Start a Trial</a>
+            <a href="#" class="button">Book a Demo</a>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <a href="#">Solutions</a>
+        <a href="#">Products</a>
+        <a href="#">Resources</a>
+        <a href="#">Plans</a>
+        <a href="#" class="button">Start a Trial</a>
+        <a href="#" class="button">Book a Demo</a>
+    </div>
+</body>
+
+</html>

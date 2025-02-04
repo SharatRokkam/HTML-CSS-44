@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Relative Padding  */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+
+        .box {
+            padding: min(5em, 8%);
+            /* padding: 5em; */
+            width: 400px;
+            height: auto;
+            background-color: aqua;
+            border-radius: 10px;
+
+        }
+
+        @media (max-width: 500px) {
+            .box {
+                padding: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, fuga? Inventore exercitationem aliquam,
+            blanditiis sint voluptates aliquid quas ad quaerat libero vitae, quisquam, pariatur recusandae ducimus.
+            Dolor voluptatibus magni dicta!</p>
+    </div>
+</body>
+
+</html>

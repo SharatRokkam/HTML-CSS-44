@@ -1,0 +1,70 @@
+/* a:link {
+  color: red;
+}
+
+a:visited {
+  color: yellow;
+}
+
+a:hover {
+  color: rgb(91, 96, 86);
+}
+
+a:active {
+  color: rgb(206, 71, 255) ;
+} */
+
+/* input:focus {
+  background-color: blue;
+} */
+
+/* li:first-child {
+  color: blue;
+}
+
+li:last-child {
+  color: red;
+} */
+
+/* li:nth-child(even) {
+  color: red;
+} */
+
+/* label {
+  text-decoration: line-through;
+}
+
+input:checked {
+  accent-color: grey;
+} */
+
+/* label::before {
+  content: "before content";
+} */
+
+label::after {
+  content: "*";
+  color: red;
+}
+
+input::placeholder {
+  color: red;
+}
+
+/* p::first-letter {
+  color: blue;
+  font-size: 20px;
+}
+
+p::first-line{
+    color: yellow;
+} */
+
+/* p::selection{
+    background-color: rgb(151, 151, 34);
+    color: black;
+} */
+
+li::marker {
+  color: blue;
+}

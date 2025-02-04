@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
+
+/* Group Selector */
+
+/* h1,
+span {
+  background-color: burlywood; */
+
+/* shorthand */
+/* border: 1px solid red; */
+/* border-width: 2px; */
+/* border-style: dashed;
+  border-color: blue; */
+
+/* border-left: 5px solid black;
+  border-top: 3px dotted blue;
+  border-right: 4px groove violet;
+  border-bottom: 3px double black; */
+
+/* padding: top right bottom left; */
+/* padding: 10px 20px 30px 25px; */
+/* padding: 20px 30px; */
+/* padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 45px;
+  padding-bottom: 50px; */
+
+/* margin: top right bottom left ; */
+
+/* margin: 10px 20px 30px 40px; */
+
+/* DRY - Don't repeat yourself */
+/* } */
+
+h1 {
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+  /* font-family: "Playwrite IE Guides", serif; */
+  /* font-weight: 900; */
+  /* font-size: 16px; by default  */
+  /* font-style: italic/oblique/normal(default); */
+
+  /* font-variant: small-caps; */
+
+  /* text-decoration:line-through; */
+  text-align: center;
+  /* text-shadow: offset-x offset-y blur color;  */
+  /* text-shadow: -2px -2px red;  */
+  /* text-shadow: 2px 2px 4px blue; */
+}
+
+p {
+  font-family: "Jersey 15", serif;
+
+  /* line-height: 200px; */
+  /* letter-spacing: 10px; */
+  /* word-spacing: 20px; */
+
+  /* text-transform: uppercase; */
+  /* text-transform: lowercase; */
+  /* text-transform: capitalize; */
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1,
+        p {
+            color: white;
+        }
+
+        /* @media  print and (min-width: 300px) and (max-width: 700px) { */
+
+        @media screen and (orientation : landscape) {
+            body {
+                background-color: azure;
+            }
+
+            h1,
+            p {
+                /* color: black; */
+                display: none;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Media Query</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, a magnam? Unde sunt ad nam quas enim ratione
+        odit aut.</p>
+
+</body>
+
+</html>

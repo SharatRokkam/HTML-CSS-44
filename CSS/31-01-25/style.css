@@ -1,0 +1,67 @@
+body {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  height: 100vh;
+  width: 100vw;
+  /* position: relative; */
+}
+
+div {
+  background-color: blueviolet;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: translate(-50%, -50%); */
+  animation-name: movingBall;
+  animation-duration: 4s;
+  /* animation-timing-function: ; */
+  /* animation-delay: 2s; */
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+/* @keyframes smooth {
+  0% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: brown;
+  }
+  100% {
+    background-color: chocolate;
+  }
+} */
+
+@keyframes movingBall {
+  0% {
+    background-color: beige;
+    left: 0px;
+    top: 0;
+  }
+
+  25% {
+    background-color: blanchedalmond;
+    /* right: 0; */
+    top: 0;
+    left: 400px;
+  }
+
+  50% {
+    left: 400px;
+    top: 400px;
+  }
+
+  75% {
+    left: 0;
+    /* right: 500px; */
+    top: 400px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}

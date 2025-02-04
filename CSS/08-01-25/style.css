@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(190, 186, 186);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.firstPart {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
+}
+
+ul {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 15px;
+  margin-top: 10px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(190, 186, 186);
+}
+
+.firstPart img {
+  width: 40px;
+}
+
+.secondPart button {
+  text-transform: uppercase;
+  border: none;
+  background-color: rgb(190, 186, 186);
+  padding: 5px 10px;
+  color: black;
+}
+
+.herosection {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image {
+  background-image: url("./undraw.png");
+  width: 430px;
+  height: 460px;
+}
+
+.content {
+  margin-top: 100px;
+  line-height: 35px;
+}
+
+.content h1 {
+  font-weight: lighter;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+.download {
+  border: 1px solid rgb(190, 186, 186);
+  padding: 8px 15px;
+}
