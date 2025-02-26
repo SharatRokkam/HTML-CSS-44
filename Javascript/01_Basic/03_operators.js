@@ -76,3 +76,58 @@
 // let lastName = "    ";
 
 // console.log(firstName + lastName);
+
+// + unary operator : number
+
+// console5.log(true);
+// console.log(+false);
+// console.log(+"10");
+// console.log(+null);
+
+// increment and decrement
+// ++ and --
+
+// postfix increment(x++) and prefix increment(--x)
+// postfix decrement(x--) and prefix decrement(--x)
+
+// let x = 10;
+// console.log(x++); //10     11
+// console.log(x--); 11       10
+// console.log(x);
+
+// console.log(--x); //9
+// console.log(++x); //10
+// console.log(x); //10
+
+// let a = 5;
+
+// let b = a++ + ++a + a-- + --a;
+// console.log(b);
+
+// 5    6
+// 6    7
+// 5 + 7 + 7 + 5
+
+// (BODMAS)
+
+// let x = 3;
+// x = x++ + ++x * 2 - --x;
+// console.log(x);
+//3 + (5 *2) - 4
+// 3 + 10 - 4 = 9
+
+// let y = 10;
+// let result = y-- - --y + ++y + y++;
+// console.log(result, y);
+
+let a = 4,
+  b = 5;
+
+let c = a++ * --b + ++a * b-- - a-- * b++;
+
+// let  c = (4 * 4) + (6 * 4) - (6 * 3)
+// c = 16 + 24 - 18
+//40 -18 = 22
+// 5
+// 4
+console.log(a, b, c);
