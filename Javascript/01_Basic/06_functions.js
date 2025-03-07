@@ -114,27 +114,70 @@
 
 // printVowels();
 
-function printVowels() {
-  setTimeout(() => {
-    console.log("A");
-    setTimeout(() => {
-      console.log("E");
+// function printVowels() {
+//   setTimeout(() => {
+//     console.log("A");
+//     setTimeout(() => {
+//       console.log("E");
+//       setTimeout(() => {
+//         console.log("I");
+//         setTimeout(() => {
+//           console.log("O");
+//           setTimeout(() => {
+//             console.log("U");
+//           }, 1000);
+//         }, 5000);
+//       }, 4000);
+//     }, 3000);
+//   }, 2000);
+// }
+
+// printVowels();
+
+// Callback Hell is something that we should avoid while fetching api, reading files...
+
+// ES6 - Promise (Heaven for callback hell)
+
+// Promise : Promise is a constructor function, which helps you to perform asynchronous operation, it has three states "REJECTED, PENDING, RESOLVE"
+//solution _ rejected (catch block) and resolved(then block) and (finally)
+
+// function findEven(num) {
+//   return new Promise((resolve, rejected) => {
+//     if (num % 2 == 0) {
+//       resolve("Conditioned satisfied");
+//     } else {
+//       rejected("Conditioned unsatisfied");
+//     }
+//   });
+// }
+
+// findEven(23)
+//   .then((response) => {
+//     console.log(response);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(() => {
+//     console.log("process successfully completed");
+//   });
+
+function printVowels( value, time) {
+  return new Promise((resolve, reject) => {
+    if (time >= 1000) {
       setTimeout(() => {
-        console.log("I");
-        setTimeout(() => {
-          console.log("O");
-          setTimeout(() => {
-            console.log("U");
-          }, 1000);
-        }, 5000);
-      }, 4000);
-    }, 3000);
-  }, 2000);
+        console.log(value);
+        resolve("resolved");
+      }, time);
+    } else {
+      reject("rejected");
+    }
+  });
 }
 
-printVowels();
-
-// Callback HELL
-
-
-// Promise 
+printVowels("A", 6000)
+  .then(() => printVowels("E", 3000))
+  .then(() => printVowels("I", 4000))
+  .then(() => printVowels("O", 2000))
+  .then(() => printVowels("U", 6000))
+  .catch((error) => console.log(error));
