@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .first {
+            font-size: 30px;
+        }
+
+        span {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="hours first"></div> <span>:</span>
+        <div class="minutes first"></div> <span>:</span>
+        <div class="seconds first"></div>
+    </div>
+
+
+    <script>
+        const hours = document.querySelector(".hours")
+        const minutes = document.querySelector(".minutes")
+        const seconds = document.querySelector(".seconds")
+
+
+        function digitalClock() {
+            const myTime = new Date();
+            let myHours = myTime.getHours()
+            let myMinutes = myTime.getMinutes()
+            let mySeconds = myTime.getSeconds()
+
+
+            hours.textContent = myHours;
+            minutes.textContent = myMinutes;
+            seconds.textContent = mySeconds;
+
+        }
+
+        setInterval(digitalClock, 1000)
+
+        digitalClock()
+    </script>
+</body>
+
+</html>
