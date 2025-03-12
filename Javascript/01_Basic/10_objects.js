@@ -17,9 +17,14 @@
 //   },
 //   fullname: {
 //     firstName: "John",
-//     lastName: "Doe",
+//     lastName: {
+//       firstLast: "ljafjla",
+//       secondLast: 223,
+//     },
 //   },
 // };
+
+// console.log(userOne.fullname.lastName.secondLast);
 
 // console.log(userOne.email);
 // console.log(userOne["full name"]);
@@ -66,13 +71,52 @@
 
 // Object Destructuring
 
-const user = { name: "Srinu", age: 26, email: "gmeil.com" };
+// const user = { name: "Srinu", age: 26, email: "gmeil.com" };
 
-const { name, age, email } = user;
+// const { name, age, email } = user;
 
-console.log(name);
-console.log(age);
-console.log(email);
+// console.log(name);
+// console.log(age);
+// console.log(email);
 
-console.log(user.hasOwnProperty("name"));
-console.log(user.hasOwnProperty("fullname"));
+// console.log(user.hasOwnProperty("name"));
+// console.log(user.hasOwnProperty("fullname"));
+
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
+
+// Object.entries
+
+// 99%
+
+let products = [
+  {
+    id: 1,
+    productName: "Mobile",
+    productQuantity: 23,
+  },
+  {
+    id: 2,
+    productName: "Laptops",
+    productQuantity: 50,
+  },
+  {
+    id: 3,
+    productName: "Tablets",
+    productQuantity: 10,
+  },
+  {
+    id: 4,
+    productName: "Monitor",
+    productQuantity: 20,
+  },
+  {
+    id: 5,
+    productName: "Cables",
+    productQuantity: 288,
+  },
+];
+
+
+
+console.log(products[2].productName);
