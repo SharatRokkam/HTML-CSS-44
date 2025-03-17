@@ -114,6 +114,9 @@ let products = [
     id: 5,
     productName: "Cables",
     productQuantity: 288,
+
+
+    
   },
 ];
 
