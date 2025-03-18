@@ -118,7 +118,7 @@
 // console.log(even);
 
 // Reduce - single value
-let reduced = numbers.reduce((acc, num) => acc * num, 0);
+// let reduced = numbers.reduce((acc, num) => acc * num, 0);
 
 // 0 + 10 = 10
 //10 + 20 = 30
@@ -132,3 +132,27 @@ let reduced = numbers.reduce((acc, num) => acc * num, 0);
 // 50 + 31
 // 81 + 51
 // 132
+
+// Real world example
+
+let products = [
+  { name: "milk", category: "dairyProduct", price: 100 },
+  { name: "chocolate", category: "snacks", price: 120 },
+  { name: "Chips", category: "snacks", price: 10 },
+  { name: "spice", category: "kitchen", price: 149 },
+  { name: "turmeric", category: "kitchen", price: 180 },
+];
+
+// products.map((product) => console.log(product.name));
+
+// const above100 = products.map((product) => {
+//   if (product.price > 100) {
+//     console.log(product.name);
+//   }
+// });
+
+// console.log(above100);
+
+// const reduced = products.reduce((acc, product) => acc + product.price, 0);
+
+// console.log(reduced);
