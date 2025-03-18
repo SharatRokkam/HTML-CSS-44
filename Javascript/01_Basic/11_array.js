@@ -59,7 +59,76 @@
 // console.log(employee.shift());
 // console.log(employee.unshift("emp10"));
 
-let employee = new Array(5);
-employee[3] = "emp4";
+// let employee = new Array(5);
+// employee[3] = "emp4";
 
-console.log(employee);
+// console.log(employee);
+
+// ****************** *****************************************
+
+// indexOf, lastIndexOf, findIndex, find, includes
+//checking and searching the elements
+
+// let numbers = [10, 20, 20, 30, 50];
+
+// console.log(numbers.indexOf(20)); index or -1
+// console.log(numbers.lastIndexOf(20));
+
+// console.log(numbers.includes(30)); true or false
+
+// let result = numbers.find((num) => num > 25);
+// console.log(result);
+
+// let index = numbers.findIndex((num) => num > 25); //
+// console.log(index);
+
+// iteration and transformation
+
+// let numbers = [10, [20, [20, [30, 50], -1, [231]], 102], 32, 11];
+
+// numbers.forEach((num) => console.log(num * 2));
+
+// some and every
+
+// let some = numbers.some((num) => num > 0);
+// console.log(some);
+
+// let number = numbers.every((num) => num > 0);
+// console.log(number);
+
+// let sort = numbers.sort((a, b) => b - a);
+// console.log(sort);
+
+// console.log(numbers.reverse());
+
+// console.log(numbers.flat(5));
+// console.log(numbers.indexOf(20));
+
+// numbers[0][1];
+
+// Map, filter, reduce
+
+// let numbers = [10, 20, 20, 31, 51];
+
+// const even = numbers.map((num) => num * 2);
+// console.log(even);
+
+// const even = numbers.filter((num) => num % 2 != 0);
+// const even = numbers.filter((num) => num % 2 != 0);
+// console.log(even);
+
+// Reduce - single value
+let reduced = numbers.reduce((acc, num) => acc * num, 0);
+
+// 0 + 10 = 10
+//10 + 20 = 30
+//30 + 20 = 50
+//50 +31 = 81
+// 81  + 51 = 132
+// console.log(reduced);
+
+// 10 + 20
+// 30 + 20
+// 50 + 31
+// 81 + 51
+// 132
