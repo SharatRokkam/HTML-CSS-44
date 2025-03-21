@@ -75,7 +75,7 @@
 
 // for (let key in student) {
 //   //string interpolation
-//   console.log(`${key}`);
+//   console.log(`${key} : ${student[key]}`);
 // }
 
 let fruits = [
@@ -89,7 +89,12 @@ let fruits = [
   "jack fruit",
 ];
 
+// let fruits = "apple";
+
+// for (let [index, element] of fruits) {
+//   console.log(`index : ${index} and ${element}`);
+// }
 
 for (let element of fruits) {
-  console.log(fruits[element], element);
+  console.log(`${fruits.indexOf(element)}: ${element}`);
 }
