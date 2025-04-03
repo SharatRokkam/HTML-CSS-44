@@ -18,20 +18,19 @@
 
 // ***********************************
 
-let div = document.createElement("div");
+// let div = document.createElement("div");
 
-div.className = "main";
-div.id = Math.floor(Math.random() * 10);
+// div.className = "main";
+// div.id = Math.floor(Math.random() * 10);
 
-div.setAttribute("title", "newDiv");
+// div.setAttribute("title", "newDiv");
 
-// div.innerText = "Dynamic Div";
-let addText = document.createTextNode("Dynamic Div 2");
+// // div.innerText = "Dynamic Div";
+// let addText = document.createTextNode("Dynamic Div 2");
 
-div.appendChild(addText);
+// div.appendChild(addText);
 
-document.body.appendChild(div)
-
+// document.body.appendChild(div)
 
 // console.log(div.innerText);
 

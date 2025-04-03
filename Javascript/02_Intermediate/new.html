@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <ul class="myUl">
+        <li>Javascript</li>
+    </ul>
+
+
+
+    <script>
+        function addLangName(langName) {
+            let li = document.createElement("li");
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector(".myUl").appendChild(li)
+        }
+        addLangName("Python")
+        addLangName("Java")
+        addLangName("Ruby on Rails")
+        addLangName("Scratch")
+
+
+
+        // Edit 
+        const secondLang = document.querySelector("li:nth-child(2)");
+
+        // console.log(secondLang)
+
+        // first way 
+        // secondLang.innerHTML = "GoLang"
+
+        // second way 
+        const newLi = document.createElement("li")
+        newLi.textContent = "SQL";
+
+        secondLang.replaceWith(newLi)
+
+        //third way 
+
+        const firstLang = document.querySelector("li:last-child")
+
+        firstLang.outerHTML = "<li>TypeScript</li>"
+
+
+        //remove
+
+        const java = document.querySelector("li:nth-child(3)")
+        java.remove()
+
+    </script>
+</body>
+
+</html>
