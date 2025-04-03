@@ -90,6 +90,8 @@ function calDiscount(price, discount) {
   return price - price * discount;
 }
 
-const tenPercentDis = calDiscount.bind(null, 0.1);
+// Lodash Function
 
-console.log(tenPercentDis(100));
+const tenPercentDis = calDiscount.bind(null);
+
+console.log(tenPercentDis(100, 0.1));
