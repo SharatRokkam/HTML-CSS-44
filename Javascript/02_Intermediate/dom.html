@@ -23,7 +23,126 @@
     </div> -->
 
 
-    <script src="./03_dom.js"></script>
+
+    <div id="test" class="testing">Hello <span>World</span></div>
+
+
+    <!-- <script src="./03_dom.js"></script> -->
+
+    <script>
+
+        // let test = document.querySelector("#test");
+        // test.setAttribute("class", "testing div1")
+
+        // console.log(test)
+        // console.log(test.getAttribute("class"))
+
+        // setInterval(() =>{
+        //     location.reload()
+        // }, 2000)
+
+        // Deep and Shallow Copy
+
+
+
+        // let person = {
+        //     name: "Something",
+        //     age: 34,
+        //     address: {
+        //         city: "wonderland"
+        //     }
+        // }
+
+
+        //deep copy
+        // let person1 = JSON.parse(JSON.stringify(person));
+
+        // let person1 = structuredClone(person)
+
+        // lodash
+
+        // person1.address.city = "dreamland"
+
+        // console.log(person);
+
+
+        // ES5 vs ES6
+
+        // What are the new features added to ES6 that were not present in ES5
+
+
+        // Spread and Rest Operator(...)
+
+        // Spread Operator 
+        //Expand element of an array and object
+
+        // const array1 = [1, 2, 3]
+        // const array2 = [...array1, 4, 5, 6]
+        // console.log(array2)
+
+        // const person = { name: "Madhu", age: 22 };
+        // const newPerson = { ...person, city: "Wonderland" }
+        // console.log(newPerson)
+
+
+        // function add(a, b, c) {
+        //     console.log(a + b + c)
+        // }
+        // add(...array1)
+
+
+        // Rest Operator
+        // Collects multiple elements into a single array(usually in function)
+
+        // Destructuring 
+
+        // let array3 = [1, 2, 4, "name", "age"]
+
+        // let [one, two, three, ...rest] = array3;
+        // console.log(one)
+        // console.log(two)
+        // console.log(three)
+        // console.log(rest)
+
+        // let person = { name: "Suneel", aadhar: "Yes", passport: "No" }
+        // let { name, ...rest } = person;
+        // console.log(name);
+        // console.log(rest)
+
+        // console.log(this)
+
+
+        'use strict'
+        // function add(){
+        //     console.log(this)
+        // }
+        // add()
+
+        //object literal
+        // let person1 = {
+
+        // }
+
+        // Constructor Function 
+        // function Person(name, age) {
+        //     this.name = name;
+        //     this.age = age;
+        // }
+
+        // let person1 = new Person(22, "madh")
+        // let person2 = new Person("Bhavna", 23)
+
+        // console.log(person1)
+        // console.log(person2)
+
+
+
+        let marks = [19, 39, 50, 60, 10];
+
+       let result =  marks.reduce((acc, currentValue) => acc + currentValue, 0)
+       console.log(result)
+
+    </script>
 </body>
 
 </html>
