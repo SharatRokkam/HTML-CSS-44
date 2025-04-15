@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search for a city...">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <div class="error-message">
+            City not found. Please try again.
+        </div>
+
+        <div class="loader">
+            <i class="fas fa-spinner"></i>
+        </div>
+
+        <div class="weather-content">
+            <div class="header">
+                <div>
+                    <div class="location">Multan</div>
+                    <div class="date">21.04.2021</div>
+                </div>
+                <div>
+                    <div class="greeting">Good Morning</div>
+                    <div class="time">12:27 PM</div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="left-panel">
+                    <div class="current-weather">
+                        <div class="temperature">20°</div>
+                        <div class="weather-info">
+                            <div class="weather-detail">
+                                <i class="fas fa-wind"></i>
+                                <span class="wind">6.1 mph</span>
+                            </div>
+                            <div class="weather-detail">
+                                <i class="fas fa-tint"></i>
+                                <span class="humidity">90 %</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-condition">Cloudy</div>
+
+                    <div class="weekly-forecast">
+                        <div class="forecast-day active">
+                            <div class="day-name">Today</div>
+                            <div class="day-temp">20°</div>
+                            <div class="day-condition">Mist</div>
+                        </div>
+                        <div class="forecast-day">
+                            <div class="day-name">Tue</div>
+                            <div class="day-temp">32°</div>
+                            <div class="day-condition">Sunny</div>
+                        </div>
+                        <div class="forecast-day">
+                            <div class="day-name">Wed</div>
+                            <div class="day-temp">12°</div>
+                            <div class="day-condition">Rainy</div>
+                        </div>
+                        <div class="forecast-day">
+                            <div class="day-name">Thu</div>
+                            <div class="day-temp">13°</div>
+                            <div class="day-condition">Rainy</div>
+                        </div>
+                        <div class="forecast-day">
+                            <div class="day-name">Fri</div>
+                            <div class="day-temp">22°</div>
+                            <div class="day-condition">Mist</div>
+                        </div>
+                        <div class="forecast-day">
+                            <div class="day-name">Sat</div>
+                            <div class="day-temp">22°</div>
+                            <div class="day-condition">Mist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-panel">
+                    <div class="right-weather-summary">
+                        <div class="right-temp">20°</div>
+                        <div class="right-details">
+                            <span><i class="fas fa-wind"></i>6.1 mph</span>
+                            <span><i class="fas fa-tint"></i>90 %</span>
+                        </div>
+                        <div class="feels-like">Feels like 19°</div>
+                        <div class="right-condition">Cloudy</div>
+                    </div>
+
+                    <div class="forecast-title">Hourly Forecast</div>
+                    <div class="hourly-forecast">
+                        <div class="hourly-item">
+                            <div class="hour">1 PM</div>
+                            <div class="hour-temp">20°</div>
+                            <div class="hour-condition">Cloudy</div>
+                        </div>
+                        <div class="hourly-item">
+                            <div class="hour">2 PM</div>
+                            <div class="hour-temp">21°</div>
+                            <div class="hour-condition">Rainy</div>
+                        </div>
+                        <div class="hourly-item">
+                            <div class="hour">3 PM</div>
+                            <div class="hour-temp">21°</div>
+                            <div class="hour-condition">Rainy</div>
+                        </div>
+                        <div class="hourly-item">
+                            <div class="hour">4 PM</div>
+                            <div class="hour-temp">20°</div>
+                            <div class="hour-condition">Cloudy</div>
+                        </div>
+                        <div class="hourly-item">
+                            <div class="hour">5 PM</div>
+                            <div class="hour-temp">21°</div>
+                            <div class="hour-condition">Rainy</div>
+                        </div>
+                        <div class="hourly-item">
+                            <div class="hour">6 PM</div>
+                            <div class="hour-temp">21°</div>
+                            <div class="hour-condition">Rainy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
